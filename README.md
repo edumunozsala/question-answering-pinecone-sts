@@ -30,6 +30,8 @@ Our goal is to show how easy is to work with Pinecone indexes where you can stor
 
 **Note:** This is still in progress and some models maybe need some more experimentation to return good answers.
 
+We will include some other demo notebooks for name entity recognition, as an example of use cases, where using vector dabatase and embeddings can help greatly to solve the tasks.
+
 ## The model
 We use a [Multilingual Sentence Transformer](sentence-transformers/distiluse-base-multilingual-cased-v1) model to create the embeddings, based on distilbert model.
 
@@ -45,6 +47,7 @@ Abstractive question answering is a much complex problem, we finally use a [T5 s
 
 - extractive question answering notebook: In this notebook we generate the answers in an extractive approach.
 - abstractive question answering notebook: In this notebook we try to generate the answers in an abstractive approach.
+- NER semantic search: An very simple example on how to use NER to search for relevant articles.
 
 ## Contributing
 If you find some bug or typo, please let me know or fixit and push it to be analyzed. 

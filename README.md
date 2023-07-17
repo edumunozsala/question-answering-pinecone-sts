@@ -43,7 +43,7 @@ It is a fine tunied model in our SQUAD database.
 Abstractive question answering is a much complex problem, we finally use a [T5 small variant](mrm8488/spanish-t5-small-sqac-for-qa) from Manu Romero. It is a spanish-T5-small fine-tuned on SQAC for Q&A downstream task.
 
 ## Content
-** Still In progress**
+**Still In progress**
 
 - extractive question answering notebook: In this notebook we generate the answers in an extractive approach.
 - abstractive question answering notebook: In this notebook we try to generate the answers in an abstractive approach.

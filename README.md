@@ -1,19 +1,18 @@
-# Demo notebooks using Pinecone vector database and Sentence Transformers in spanish
+# Using Pinecone vector database and Sentence Transformers to Answer Questions in Spanish
 
-This repository contains some Jupyter notebooks, experimenting with Pinecone vector database and Sentence Transformers. We are working with text data in spanish, using Sentence Transformers to produce embeddings and then we create an index in Pinecone to store the embeddings. The goal is to build a question answering model, the questions will be used to retrieve the more acceptable context passages from our embeddings index and finally we create a QA model that receives the question and the context and return the answer. But we are really interested in manage the index and work with it, we do not search for the better QA model, that is a different task.
+This repository contains some Jupyter notebooks, experimenting with Pinecone vector database and Sentence Transformers. We are working with text data in Spanish, using Sentence Transformers to produce embeddings and then we create an index in Pinecone to store the embeddings. The goal is to build a question-answering model, the questions will be used to retrieve the more acceptable context passages from our embeddings index and finally, we create a QA model that receives the question and the context and returns the answer. But we are really interested in managing the index and working with it, we do not search for the best QA model, that is a different task
 
 Steps in the notebooks:
 - Data download and preprocessing
 - Select and download a sentence transformer model to create the embeddings
 - Select and download the retriever, the model thta generates the answers
-- Connect and create a Pinecone index with the rigths parameters
-- Select the metadata we need to store, chunck the texts and upload them to the index
+- Connect and create a Pinecone index with the rights parameters
+- Select the metadata we need to store, chunk the texts and upload them to the index
 - Given a question, query the vector index to retrieve the context
 - Format the prompt or input to the question answering model 
 - Infere the output using the retriever model
 
 We are not interested in the model architecture, we are not searching the "best model" what we want to show here is how to deal and manage a Pinecone index and the embeddings. We create some demo and basic notebooks to show how to work 
-
 
 **This repository is still In progress**
 
@@ -25,10 +24,10 @@ This is an automatic translation of the Stanford Question Answering Dataset (SQu
 
 
 ## Problem description
-**In progress**
+
 Our goal is to show how easy is to work with Pinecone indexes where you can store your text embeddings, query them using different distance metrics and then you can extract context information to solve your task. for this purpose, we create sentence transformers model to generate the embeddings and question aswering models to extract the appropiate response.
 
-**Note:** This is still in progress and some models maybe need some more experimentation to return good answers.
+**Note:** This solution is still **in progress** and some models maybe need some more experimentation to return best answers.
 
 We will include some other demo notebooks for name entity recognition, as an example of use cases, where using vector dabatase and embeddings can help greatly to solve the tasks.
 
